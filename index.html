@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Burnout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de Burnout</h1>
+        <p>Descubra se você está em risco de sofrer de burnout e receba recomendações práticas de como melhorar.</p>
+    </header>
+
+    <section id="intro">
+        <h2>O que é o Burnout?</h2>
+        <p>O burnout é um estado de esgotamento físico, emocional e mental causado pelo estresse prolongado, especialmente relacionado ao trabalho. Os sintomas incluem cansaço excessivo, sensação de falta de controle e desconexão emocional.</p>
+        <p>Este teste ajudará a avaliar o seu risco de burnout com base em suas respostas. Vamos começar?</p>
+        <button id="start-btn">Iniciar Teste</button> <!-- Botão para iniciar -->
+    </section>
+
+    <section id="quiz" style="display: none;"> <!-- Quiz começa oculto -->
+        <form id="burnout-test">
+            <h3>Responda as seguintes perguntas:</h3>
+
+            <div class="question">
+                <label for="q1">1. Você sente constantemente que está sobrecarregado no trabalho?</label>
+                <input type="radio" name="q1" value="1"> Sim
+                <input type="radio" name="q1" value="0"> Não
+            </div>
+
+            <div class="question">
+                <label for="q2">2. Você tem dificuldade para desconectar do trabalho após o expediente?</label>
+                <input type="radio" name="q2" value="1"> Sim
+                <input type="radio" name="q2" value="0"> Não
+            </div>
+
+            <div class="question">
+                <label for="q3">3. Você se sente exausto(a) física e mentalmente frequentemente?</label>
+                <input type="radio" name="q3" value="1"> Sim
+                <input type="radio" name="q3" value="0"> Não
+            </div>
+
+            <div class="question">
+                <label for="q4">4. Você tem dificuldades para encontrar motivação no trabalho?</label>
+                <input type="radio" name="q4" value="1"> Sim
+                <input type="radio" name="q4" value="0"> Não
+            </div>
+
+            <div class="question">
+                <label for="q5">5. Você sente que não está recebendo apoio suficiente de colegas ou superiores?</label>
+                <input type="radio" name="q5" value="1"> Sim
+                <input type="radio" name="q5" value="0"> Não
+            </div>
+
+            <button type="submit">Ver Resultado</button>
+        </form>
+    </section>
+
+    <section id="result" style="display: none;">
+        <h2>Seu Resultado:</h2>
+        <p id="result-text"></p>
+        <p><strong>Grau de Risco: </strong><span id="stress-level"></span></p>
+        <div id="graph"></div>
+
+        <h3>Recomendações</h3>
+        <div id="recommendations"></div>
+
+        <h4>Links Úteis</h4>
+        <ul id="useful-links">
+            <li><a href="https://www.psicologia.pt" target="_blank">Psicologia.pt</a></li>
+            <li><a href="https://www.mindfulness.org" target="_blank">Mindfulness</a></li>
+            <li><a href="https://www.therapists.com" target="_blank">Encontre um terapeuta</a></li>
+        </ul>
+
+        <button id="retest-btn">Fazer o Teste Novamente</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

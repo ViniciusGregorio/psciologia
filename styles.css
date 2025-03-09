@@ -17,6 +17,21 @@ section {
     padding: 20px;
     margin: 20px;
 }
+.footer {
+            background-color: #0057b3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer h3 {
+            margin: 5px 0;
+        }
+        .footer p {
+            margin: 2px 0;
+        }
 
 #quiz, #result {
     background-color: white;

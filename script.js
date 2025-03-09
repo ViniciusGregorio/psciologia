@@ -50,7 +50,7 @@ document.getElementById('burnout-test').addEventListener('submit', function(even
 
 // Evento para reiniciar o teste
 document.getElementById('retest-btn').addEventListener('click', function() {
-    document.getElementById('quiz').style.display = 'block';
+    document.getElementById('quiz').style.display = 'none';
     document.getElementById('result').style.display = 'none';
     document.getElementById('intro').style.display = 'block';
 });
